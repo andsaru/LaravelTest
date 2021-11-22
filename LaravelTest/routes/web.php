@@ -19,3 +19,5 @@ Route::get('/', function () {
 });
 
 Route::get('/login', [SessionsController::class, 'create']) ->name('login.index');
+
+Route::post('/login', [SessionsController::class, 'create']) ->name('login.index');
